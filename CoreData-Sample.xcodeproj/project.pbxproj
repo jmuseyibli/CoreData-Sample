@@ -34,6 +34,9 @@
 		A16C2A44244CDA36000E989A /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A43244CDA36000E989A /* InputCell.swift */; };
 		A16C2A46244CDA60000E989A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A45244CDA60000E989A /* Date.swift */; };
 		A16C2A48244CDA8F000E989A /* IndentedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A47244CDA8F000E989A /* IndentedTextField.swift */; };
+		A16C2A4A244CDC28000E989A /* ReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A49244CDC28000E989A /* ReceiptController.swift */; };
+		A16C2A4C244CDC40000E989A /* ReceiptController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A4B244CDC40000E989A /* ReceiptController+TableView.swift */; };
+		A16C2A4E244CDC5E000E989A /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A4D244CDC5E000E989A /* DetailCell.swift */; };
 		A1B5B4C8244C5E65008D77EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */; };
 		A1B5B4CA244C5E65008D77EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */; };
 		A1B5B4CC244C5E65008D77EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4CB244C5E65008D77EC /* ViewController.swift */; };
@@ -92,6 +95,9 @@
 		A16C2A43244CDA36000E989A /* InputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCell.swift; sourceTree = "<group>"; };
 		A16C2A45244CDA60000E989A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A16C2A47244CDA8F000E989A /* IndentedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentedTextField.swift; sourceTree = "<group>"; };
+		A16C2A49244CDC28000E989A /* ReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptController.swift; sourceTree = "<group>"; };
+		A16C2A4B244CDC40000E989A /* ReceiptController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReceiptController+TableView.swift"; sourceTree = "<group>"; };
+		A16C2A4D244CDC5E000E989A /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		A1B5B4C4244C5E65008D77EC /* CoreData-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +171,8 @@
 				A16C2A3D244CD923000E989A /* ProvidersController+TableView.swift */,
 				A16C2A3F244CD9F2000E989A /* PaymentFormController.swift */,
 				A16C2A41244CDA0D000E989A /* PaymentFormController+TableView.swift */,
+				A16C2A49244CDC28000E989A /* ReceiptController.swift */,
+				A16C2A4B244CDC40000E989A /* ReceiptController+TableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 				A16C2A3B244CD8F5000E989A /* ProviderCell.swift */,
 				A16C2A43244CDA36000E989A /* InputCell.swift */,
 				A16C2A47244CDA8F000E989A /* IndentedTextField.swift */,
+				A16C2A4D244CDC5E000E989A /* DetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -463,6 +472,7 @@
 			files = (
 				A16C2A26244CD404000E989A /* Error.swift in Sources */,
 				A16C2A46244CDA60000E989A /* Date.swift in Sources */,
+				A16C2A4A244CDC28000E989A /* ReceiptController.swift in Sources */,
 				A16C2A2E244CD588000E989A /* CategoryCell.swift in Sources */,
 				A16C2A28244CD429000E989A /* PaymentResponse.swift in Sources */,
 				A16C2A3A244CD8D2000E989A /* ProvidersControlller.swift in Sources */,
@@ -472,10 +482,12 @@
 				A16C2A38244CD70F000E989A /* UIViewController.swift in Sources */,
 				A1B5B4CC244C5E65008D77EC /* ViewController.swift in Sources */,
 				A16C2A10244C6A52000E989A /* Provider.swift in Sources */,
+				A16C2A4E244CDC5E000E989A /* DetailCell.swift in Sources */,
 				A16C2A12244C6A62000E989A /* CustomField.swift in Sources */,
 				A1B5B4C8244C5E65008D77EC /* AppDelegate.swift in Sources */,
 				A16C2A3E244CD923000E989A /* ProvidersController+TableView.swift in Sources */,
 				A16C2A14244C6A6E000E989A /* Pair.swift in Sources */,
+				A16C2A4C244CDC40000E989A /* ReceiptController+TableView.swift in Sources */,
 				A16C2A1E244CD349000E989A /* PaymentRequest.swift in Sources */,
 				A16C2A30244CD5D8000E989A /* CategoriesController+CollectionView.swift in Sources */,
 				A16C2A42244CDA0D000E989A /* PaymentFormController+TableView.swift in Sources */,

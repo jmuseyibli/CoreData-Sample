@@ -115,7 +115,10 @@ class PaymentFormController: UITableViewController {
     }
     
     fileprivate func presentReceipt(for receipt: Receipt) {
-        // TODO: Present Receipt to user
+        let receiptController = ReceiptController()
+        receiptController.isModalInPresentation = true
+        receiptController.receipt = receipt
+        present(UINavigationController(rootViewController: receiptController), animated: true, completion: nil)
     }
     
     @objc func handleMakePayment() {
