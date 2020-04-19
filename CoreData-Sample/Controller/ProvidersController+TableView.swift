@@ -21,7 +21,9 @@ extension ProvidersController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Open payment form
+        let paymentFormController = PaymentFormController()
+        paymentFormController.provider = providers[indexPath.item]
+        navigationController?.pushViewController(paymentFormController, animated: true)
     }
     
 }

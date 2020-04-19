@@ -29,6 +29,11 @@
 		A16C2A3A244CD8D2000E989A /* ProvidersControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A39244CD8D2000E989A /* ProvidersControlller.swift */; };
 		A16C2A3C244CD8F5000E989A /* ProviderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A3B244CD8F5000E989A /* ProviderCell.swift */; };
 		A16C2A3E244CD923000E989A /* ProvidersController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A3D244CD923000E989A /* ProvidersController+TableView.swift */; };
+		A16C2A40244CD9F2000E989A /* PaymentFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A3F244CD9F2000E989A /* PaymentFormController.swift */; };
+		A16C2A42244CDA0D000E989A /* PaymentFormController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A41244CDA0D000E989A /* PaymentFormController+TableView.swift */; };
+		A16C2A44244CDA36000E989A /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A43244CDA36000E989A /* InputCell.swift */; };
+		A16C2A46244CDA60000E989A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A45244CDA60000E989A /* Date.swift */; };
+		A16C2A48244CDA8F000E989A /* IndentedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A47244CDA8F000E989A /* IndentedTextField.swift */; };
 		A1B5B4C8244C5E65008D77EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */; };
 		A1B5B4CA244C5E65008D77EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */; };
 		A1B5B4CC244C5E65008D77EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4CB244C5E65008D77EC /* ViewController.swift */; };
@@ -82,6 +87,11 @@
 		A16C2A39244CD8D2000E989A /* ProvidersControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersControlller.swift; sourceTree = "<group>"; };
 		A16C2A3B244CD8F5000E989A /* ProviderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderCell.swift; sourceTree = "<group>"; };
 		A16C2A3D244CD923000E989A /* ProvidersController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProvidersController+TableView.swift"; sourceTree = "<group>"; };
+		A16C2A3F244CD9F2000E989A /* PaymentFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormController.swift; sourceTree = "<group>"; };
+		A16C2A41244CDA0D000E989A /* PaymentFormController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentFormController+TableView.swift"; sourceTree = "<group>"; };
+		A16C2A43244CDA36000E989A /* InputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCell.swift; sourceTree = "<group>"; };
+		A16C2A45244CDA60000E989A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		A16C2A47244CDA8F000E989A /* IndentedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentedTextField.swift; sourceTree = "<group>"; };
 		A1B5B4C4244C5E65008D77EC /* CoreData-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +163,8 @@
 				A16C2A2F244CD5D8000E989A /* CategoriesController+CollectionView.swift */,
 				A16C2A39244CD8D2000E989A /* ProvidersControlller.swift */,
 				A16C2A3D244CD923000E989A /* ProvidersController+TableView.swift */,
+				A16C2A3F244CD9F2000E989A /* PaymentFormController.swift */,
+				A16C2A41244CDA0D000E989A /* PaymentFormController+TableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +174,8 @@
 			children = (
 				A16C2A2D244CD588000E989A /* CategoryCell.swift */,
 				A16C2A3B244CD8F5000E989A /* ProviderCell.swift */,
+				A16C2A43244CDA36000E989A /* InputCell.swift */,
+				A16C2A47244CDA8F000E989A /* IndentedTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A16C2A37244CD70F000E989A /* UIViewController.swift */,
+				A16C2A45244CDA60000E989A /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -447,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16C2A26244CD404000E989A /* Error.swift in Sources */,
+				A16C2A46244CDA60000E989A /* Date.swift in Sources */,
 				A16C2A2E244CD588000E989A /* CategoryCell.swift in Sources */,
 				A16C2A28244CD429000E989A /* PaymentResponse.swift in Sources */,
 				A16C2A3A244CD8D2000E989A /* ProvidersControlller.swift in Sources */,
@@ -462,8 +478,11 @@
 				A16C2A14244C6A6E000E989A /* Pair.swift in Sources */,
 				A16C2A1E244CD349000E989A /* PaymentRequest.swift in Sources */,
 				A16C2A30244CD5D8000E989A /* CategoriesController+CollectionView.swift in Sources */,
+				A16C2A42244CDA0D000E989A /* PaymentFormController+TableView.swift in Sources */,
+				A16C2A40244CD9F2000E989A /* PaymentFormController.swift in Sources */,
 				A1B5B4FD244C66FC008D77EC /* CoreDataManager.swift in Sources */,
 				A16C2A22244CD3A7000E989A /* Card.swift in Sources */,
+				A16C2A48244CDA8F000E989A /* IndentedTextField.swift in Sources */,
 				A16C2A1C244CD33A000E989A /* Receipt.swift in Sources */,
 				A16C2A1A244CD315000E989A /* Service.swift in Sources */,
 				A16C2A33244CD6B0000E989A /* EasyDebug.swift in Sources */,
@@ -472,6 +491,7 @@
 				A16C2A24244CD3D8000E989A /* CategoriesResponse.swift in Sources */,
 				A1B5B4CA244C5E65008D77EC /* SceneDelegate.swift in Sources */,
 				A16C2A0E244C6A29000E989A /* Category.swift in Sources */,
+				A16C2A44244CDA36000E989A /* InputCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
