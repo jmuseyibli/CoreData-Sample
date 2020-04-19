@@ -22,10 +22,45 @@ class CategoriesController: UICollectionViewController {
         collectionView.backgroundColor = .white
         collectionView.contentInset = .init(top: 16, left: 16, bottom: 16, right: 16)
         
-        // TODO: Load data
+        loadData()
+    }
+    
+    fileprivate func loadData() {
+        if Connectivity.isConnectedToInternet {
+            Service.shared.getCategories(success: { (categories, error)  in
+                if let error = error {
+                    self.presentAlert(title: "Oops", message: "Request failed with ERR\(error.code): \(error.message)", actionTitle: "Dismiss", actionStyle: .destructive, handler: { (_) in
+                        self.dismiss(animated: true, completion: {
+                            self.categories = CoreDataManager.shared.fetchCategoriesAsStruct()
+                            DispatchQueue.main.async {
+                                self.collectionView.reloadData()
+                            }
+                        })
+                    }, completion: nil)
+                    return
+                }
+                guard let categories = categories else { return }
+                self.categories = categories
+                EasyDebug.shared.printCategories()
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }) {
+                print("error")
+            }
+        } else {
+            EasyDebug.shared.printCategories()
+            presentAlert(title: "No internet connection", message: "Internet connection is not available. We will use cashed payment options.", actionTitle: "Dismiss", actionStyle: .destructive, handler: { (_) in
+                self.dismiss(animated: true, completion: nil)
+            }) {
+                self.categories = CoreDataManager.shared.fetchCategoriesAsStruct()
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
+        }
     }
 
-    
     init() {
         let layout = UICollectionViewFlowLayout()
         super.init(collectionViewLayout: layout)
