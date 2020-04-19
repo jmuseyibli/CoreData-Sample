@@ -15,6 +15,7 @@
 		A1B5B4D7244C5E67008D77EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5B4D5244C5E67008D77EC /* LaunchScreen.storyboard */; };
 		A1B5B4E2244C5E68008D77EC /* CoreData_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4E1244C5E68008D77EC /* CoreData_SampleTests.swift */; };
 		A1B5B4ED244C5E68008D77EC /* CoreData_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4EC244C5E68008D77EC /* CoreData_SampleUITests.swift */; };
+		A1B5B4FD244C66FC008D77EC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4FC244C66FC008D77EC /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A1B5B4EC244C5E68008D77EC /* CoreData_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_SampleUITests.swift; sourceTree = "<group>"; };
 		A1B5B4EE244C5E68008D77EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B5B4FA244C6558008D77EC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1B5B4FC244C66FC008D77EC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		A1B5B4C6244C5E65008D77EC /* CoreData-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				A1B5B4FB244C66EC008D77EC /* Service */,
 				A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */,
 				A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */,
 				A1B5B4CB244C5E65008D77EC /* ViewController.swift */,
@@ -128,6 +131,14 @@
 				A1B5B4EE244C5E68008D77EC /* Info.plist */,
 			);
 			path = "CoreData-SampleUITests";
+			sourceTree = "<group>";
+		};
+		A1B5B4FB244C66EC008D77EC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5B4FC244C66FC008D77EC /* CoreDataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 				A1B5B4D2244C5E65008D77EC /* CoreData_Sample.xcdatamodeld in Sources */,
 				A1B5B4CC244C5E65008D77EC /* ViewController.swift in Sources */,
 				A1B5B4C8244C5E65008D77EC /* AppDelegate.swift in Sources */,
+				A1B5B4FD244C66FC008D77EC /* CoreDataManager.swift in Sources */,
 				A1B5B4CA244C5E65008D77EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
