@@ -21,7 +21,9 @@ extension CategoriesController: UICollectionViewDelegateFlowLayout {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: Handle navigation to providers
+        let providersController = ProvidersController()
+        providersController.category = categories[indexPath.item]
+        navigationController?.pushViewController(providersController, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
