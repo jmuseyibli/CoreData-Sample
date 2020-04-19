@@ -49,6 +49,7 @@
 		A1B5B4E8244C5E68008D77EC /* CoreData-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5B4EC244C5E68008D77EC /* CoreData_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_SampleUITests.swift; sourceTree = "<group>"; };
 		A1B5B4EE244C5E68008D77EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B5B4FA244C6558008D77EC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		A1B5B4BB244C5E65008D77EC = {
 			isa = PBXGroup;
 			children = (
+				A1B5B4FA244C6558008D77EC /* README.md */,
 				A1B5B4C6244C5E65008D77EC /* CoreData-Sample */,
 				A1B5B4E0244C5E68008D77EC /* CoreData-SampleTests */,
 				A1B5B4EB244C5E68008D77EC /* CoreData-SampleUITests */,
