@@ -12,7 +12,7 @@ class CoreDataManager {
     static let shared = CoreDataManager()
     
     let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreDataSample")
+        let container = NSPersistentContainer(name: "CoreData_Sample")
         container.loadPersistentStores { (storeDescription, error) in
             if let error = error {
                 fatalError("Loading of the store failed: \(error)")
