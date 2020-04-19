@@ -20,6 +20,9 @@
 		A16C2A24244CD3D8000E989A /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A23244CD3D8000E989A /* CategoriesResponse.swift */; };
 		A16C2A26244CD404000E989A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A25244CD404000E989A /* Error.swift */; };
 		A16C2A28244CD429000E989A /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A27244CD429000E989A /* PaymentResponse.swift */; };
+		A16C2A2B244CD53D000E989A /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A2A244CD53D000E989A /* CategoriesController.swift */; };
+		A16C2A2E244CD588000E989A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A2D244CD588000E989A /* CategoryCell.swift */; };
+		A16C2A30244CD5D8000E989A /* CategoriesController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C2A2F244CD5D8000E989A /* CategoriesController+CollectionView.swift */; };
 		A1B5B4C8244C5E65008D77EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */; };
 		A1B5B4CA244C5E65008D77EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */; };
 		A1B5B4CC244C5E65008D77EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5B4CB244C5E65008D77EC /* ViewController.swift */; };
@@ -64,6 +67,9 @@
 		A16C2A23244CD3D8000E989A /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
 		A16C2A25244CD404000E989A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		A16C2A27244CD429000E989A /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		A16C2A2A244CD53D000E989A /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		A16C2A2D244CD588000E989A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A16C2A2F244CD5D8000E989A /* CategoriesController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoriesController+CollectionView.swift"; sourceTree = "<group>"; };
 		A1B5B4C4244C5E65008D77EC /* CoreData-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5B4C9244C5E65008D77EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +134,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A16C2A29244CD52A000E989A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A16C2A2A244CD53D000E989A /* CategoriesController.swift */,
+				A16C2A2F244CD5D8000E989A /* CategoriesController+CollectionView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A16C2A2C244CD56C000E989A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A16C2A2D244CD588000E989A /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1B5B4BB244C5E65008D77EC = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +178,8 @@
 		A1B5B4C6244C5E65008D77EC /* CoreData-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				A16C2A2C244CD56C000E989A /* View */,
+				A16C2A29244CD52A000E989A /* Controller */,
 				A16C2A0C244C6A16000E989A /* Model */,
 				A1B5B4FB244C66EC008D77EC /* Service */,
 				A1B5B4C7244C5E65008D77EC /* AppDelegate.swift */,
@@ -388,8 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16C2A26244CD404000E989A /* Error.swift in Sources */,
+				A16C2A2E244CD588000E989A /* CategoryCell.swift in Sources */,
 				A16C2A28244CD429000E989A /* PaymentResponse.swift in Sources */,
 				A1B5B4D2244C5E65008D77EC /* CoreData_Sample.xcdatamodeld in Sources */,
+				A16C2A2B244CD53D000E989A /* CategoriesController.swift in Sources */,
 				A16C2A20244CD37B000E989A /* Amount.swift in Sources */,
 				A1B5B4CC244C5E65008D77EC /* ViewController.swift in Sources */,
 				A16C2A10244C6A52000E989A /* Provider.swift in Sources */,
@@ -397,6 +424,7 @@
 				A1B5B4C8244C5E65008D77EC /* AppDelegate.swift in Sources */,
 				A16C2A14244C6A6E000E989A /* Pair.swift in Sources */,
 				A16C2A1E244CD349000E989A /* PaymentRequest.swift in Sources */,
+				A16C2A30244CD5D8000E989A /* CategoriesController+CollectionView.swift in Sources */,
 				A1B5B4FD244C66FC008D77EC /* CoreDataManager.swift in Sources */,
 				A16C2A22244CD3A7000E989A /* Card.swift in Sources */,
 				A16C2A1C244CD33A000E989A /* Receipt.swift in Sources */,
